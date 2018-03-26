@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to the movie theater!</h1>
+      </div>
+      <div class="row">
+        <form id="Movie">
+          <div class="col-md-4">
+            <label for="inlineFormCustomSelect">Choose your movie!</label>
+            <select class="custom-select" id="movieSelection">
+              <option selected>Choose...</option>
+              <option value="BlackPanther">Black Panther</option>
+              <option value="MotherOfGeorge">Mother Of George</option>
+              <option value="HiddenFigures">Hidden Figures</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inlineFormCustomSelect">chose your Time!</label>
+            <select class="custom-select" id="movieTime">
+              <option selected>choose...</option>
+              <option value="7:00pm">7:00PM</option>
+              <option value="11:00PM">11:00PM/option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inlineFormCustomSelect">Are you over 60?</label>
+            <select class="custom-select" id="movieAge">
+              <option selected>choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <button type="submit" name="button" class="btn btn-danger">submit</button>
+        </form>
+        <div id="result">
+          <h4>Your movie is at:<span id="showtime"></span> and will cost $ <span id="showtimePrice"></span></h4>
+        </div>
+        <div id="moviephotos">
+          <span id="movieImageBlackPanther"><img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQPpcKQ9eWZGxJe6eXyCW91eayLVm4KqruvJz3GP0F2T2w46yKZ" alt="blackPanther"></span>
+          <span id="movieImageMotherOfGeorge"><img src="https://de1imrko8s7v6.cloudfront.net/movies/posters/Mother-Of-George_movieposter_1383248998.jpg" alt="MotherOfGeorge"></span>
+          <span id="movieImageHiddenFigures"><img src="http://t1.gstatic.com/images?q=tbn:ANd9GcRqU2FbN7Zp0ELl-sX4lO8XO0pTjpmdJcpos_fnP9wM9DQHYgFq" alt="HiddenFigures"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.jumbotron {
+  text-align: center;
+}
+#result {
+  display: none;
+}
+#moviephotos {
+  display: none;
+}
