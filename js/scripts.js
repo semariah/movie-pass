@@ -19,24 +19,29 @@ $(document).ready(function(){
     var newTicket = new Ticket(question1, question2, question3);
 
     $("#showtime").text(question2);
-    $("result").show();
+    //$("result").show();
     //alert("yes");
-    moviePrice = 0;
-    if(newTicket.Time === "7:00PM"){
+    var moviePrice = 0;
+
+    if (newTicket.Time === "11:00PM"){
       moviePrice += 15
-    } else if (newTicket.Time === "12:00PM") {
+      debugger;
+    } else if (newTicket.Time === "7:00PM"){
       moviePrice += 10
     }
-    if (newTicket.Age === "Yes"){
+
+    if (newTicket.Age === "yes"){
       moviePrice -= 5
     }
-    $("#showtimePrice").text(moviePrice);
 
-    if (newTicket.movieName === "blackPanther") {
+    $("#showtimePrice").text(moviePrice);
+    //$("result").show();
+
+    if (newTicket.movieName === "BlackPanther"){
       $("#movieImageBlackPanther").show();
-    } else if (newTicket.movieName === "MotherOfGeorge") {
+    } else if (newTicket.movieName === "MotherOfGeorge"){
       $("#movieImageMotherOfGeorge").show();
-    } else if (newTicket.movieName === "HiddenFigures") {
+    } else if (newTicket.movieName === "HiddenFigures"){
       $("#movieImageHiddenFigures").show();
     }
 
